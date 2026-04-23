@@ -4,9 +4,11 @@ This repo is the home for your team's final project.
 
 Use it to keep the charter, code, report, outputs, and team history in one place. If you like working in Colab, that is fine. Run notebooks there if you want, but push the important work back here. GitHub is the source of truth. Colab is just one place to run code.
 
+This public repo is the starter. Your actual team repo should usually be private.
+
 ## Start Here
 
-1. Click `Use this template` on GitHub to create your team's own copy.
+1. Click `Use this template` on GitHub to create your team's own **private** repo.
 2. Rename the repo to something clear and short.
 3. If GitHub is new, read [GITHUB_PRIMER.md](./GITHUB_PRIMER.md).
 4. Read [FINAL_PROJECT.md](./FINAL_PROJECT.md).

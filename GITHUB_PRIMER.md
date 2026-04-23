@@ -48,7 +48,7 @@ That order matters. Do not start by poking random files.
 
 By the end of the first 24 hours, your team should have done all of this:
 
-- created the repo from the template
+- created a **private** repo from the template
 - renamed it clearly
 - added all team members
 - read the project brief
@@ -139,7 +139,7 @@ Do not create a situation where one person becomes "the GitHub person" and every
 
 Here is a clean first-day sequence:
 
-1. One teammate creates the repo from the template.
+1. One teammate creates a private repo from the template.
 2. Add teammates as collaborators.
 3. Everyone opens the repo and reads `README.md` and `FINAL_PROJECT.md`.
 4. One person starts drafting the charter.
