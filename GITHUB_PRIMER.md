@@ -32,7 +32,7 @@ But a final project usually needs more than one notebook:
 
 GitHub is where all of that lives together. Colab can still be one place where code runs. It just should not be the only place the project exists.
 
-## Read This Repo In This Order
+## Read The Project Repo In This Order
 
 When you open the starter repo, go in this order:
 
@@ -48,11 +48,12 @@ That order matters. Do not start by poking random files.
 
 ## The 24-Hour Ramp
 
-By the end of the first 24 hours, your team should have done all of this:
+By the end of the first 24 hours, each team should have done all of this:
 
-- created a **private** repo from the template
+- created the repo from the template
 - renamed it clearly
 - added all team members
+- shared the repo with the instructor
 - read the project brief
 - chosen a rough project direction
 - started the charter
@@ -91,6 +92,23 @@ What to learn on day 1:
 - sync changes
 
 That is enough to start.
+
+### Simplest way to edit the charter
+
+For most teams, the easiest path is:
+
+1. open `CHARTER.md` on GitHub
+2. click the pencil icon
+3. write or revise the charter there
+4. commit the change with a normal message
+
+After the charter is approved, one teammate can create a locked PDF copy with:
+
+```bash
+pandoc CHARTER.md -o charter_approved.pdf
+```
+
+Then commit `charter_approved.pdf` to the repo.
 
 ### Path B: Light terminal (faster once one teammate is comfortable)
 
@@ -141,13 +159,14 @@ Do not create a situation where one person becomes "the GitHub person" and every
 
 Here is a clean first-day sequence:
 
-1. One teammate creates a private repo from the template.
+1. One teammate creates the repo from the template.
 2. Add teammates as collaborators.
-3. Everyone opens the repo and reads `README.md` and `FINAL_PROJECT.md`.
-4. One person starts drafting the charter.
-5. Another person looks through the example charters.
-6. A third person checks whether the likely data source is actually reachable.
-7. Before the day ends, commit the first draft and push it.
+3. Add the instructor as collaborator if the repo is private.
+4. Everyone opens the repo and reads `README.md` and `FINAL_PROJECT.md`.
+5. One person starts drafting the charter in `CHARTER.md`.
+6. Another person looks through the example charters.
+7. A third person checks whether the likely data source is actually reachable.
+8. Before the day ends, commit the first draft and push it.
 
 That is enough. Do not spend the first day polishing folder names or debating advanced git workflows.
 

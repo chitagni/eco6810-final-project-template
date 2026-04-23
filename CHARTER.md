@@ -10,7 +10,15 @@
 >
 > **How to fill it.** Copy this file. Answer every field. Keep it under two pages. If a field asks for a number, give a real number with a unit.
 >
-> **Submission.** Submit it as a PDF to Classroom. You can revise and resubmit until it is approved.
+> **Where this lives.** Fill this out inside your team GitHub repo. That repo is where we will review and approve the charter.
+>
+> **How approval works.** Revise `CHARTER.md` in the repo until it is approved. Do not treat the charter as a separate detached file living somewhere else.
+>
+> **Simplest editing path.** Open `CHARTER.md` on GitHub, click the pencil icon, edit the file, and commit the change.
+>
+> **After approval.** One teammate can freeze the approved version as a PDF with:
+> `pandoc CHARTER.md -o charter_approved.pdf`
+> Then commit that PDF to the repo as the locked approved copy.
 
 ---
 
@@ -67,7 +75,7 @@ If you cannot write a number, you do not yet have a project — you have a topic
 
 ## 4. Baseline to beat
 
-The naive or prior number your threshold is measured against. Examples:
+The naïve or prior number your threshold is measured against. Examples:
 
 - A previous study's coefficient or error.
 - A simple AR(1) or last-value forecast.

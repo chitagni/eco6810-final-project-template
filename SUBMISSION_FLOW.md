@@ -29,22 +29,48 @@ If you make a meaningful change after the deadline, it does not count unless the
 Make sure all of this is already true:
 
 - your team repo exists on GitHub
+- the repo is the same one you shared when the team formed
 - the repo has a short `README.md` with the run command
 - the important project files are pushed to GitHub
 - the repo is not depending on one teammate's unsaved local state
 
-## Share The Repo Early
+## Create And Share The Repo Early
 
-Do this as soon as your charter is approved:
+Do this as soon as your team and provisional project title are set:
 
-- update `CHARTER.md` in the repo so it matches the approved charter
-- if your team is using a PDF copy of the approved charter, keep that in the repo too
+- create the repo from the template
+- rename it clearly
 - if the repo is private, add the instructor GitHub account `chitagni` as a collaborator
-- make sure the repo link you plan to submit later is already the real working repo
+- start `CHARTER.md` in that repo
+- keep using that same repo for the rest of the project
 
 This is important.
 
-The repo should not first appear at the milestone or final deadline. It should already be the home of the project by then.
+The repo should not first appear at charter approval, the milestone, or the final deadline. It should already be the home of the project by then.
+
+## After Charter Approval
+
+Once the charter is approved:
+
+- make sure `CHARTER.md` in the repo matches the approved version
+- optionally freeze it as `charter_approved.pdf`
+- if you want that locked PDF, one teammate can run:
+
+```bash
+pandoc CHARTER.md -o charter_approved.pdf
+```
+
+- commit the PDF to the repo
+
+## Why This Helps Everyone
+
+This makes the process simpler for students and for grading:
+
+- students have one clear first action after class
+- the charter and the project live in one place
+- the repo link does not keep changing
+- project tracking becomes one stable list of team repos
+- grading is easier because the same repo is used from start to finish
 
 ## Milestone Submission
 
@@ -72,8 +98,11 @@ Good places for those small proofs:
 Upload one short submission that contains:
 
 - the GitHub repo link
-- the approved charter PDF
 - a short note saying where the source proofs live if they are not obvious
+
+No separate charter PDF is needed if the approved charter is already in the repo.
+
+If your team created `charter_approved.pdf`, that is fine to keep in the repo too.
 
 ### What "submitted" means for the milestone
 

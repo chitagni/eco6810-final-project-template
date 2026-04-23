@@ -27,19 +27,22 @@ Start here. Then use the [charter template](./CHARTER.md). For exact milestone a
 
 ## One Important Workflow Rule
 
-As soon as your charter is approved:
+As soon as your team and provisional project title are set:
 
-- update the charter in your GitHub repo
-- make sure the repo link is stable
+- create a GitHub repo from the template
+- rename it clearly
 - if the repo is private, add the instructor GitHub account `chitagni` as a collaborator
+- start filling `CHARTER.md` inside that repo
 
-Do not wait until the final deadline to share the repo for the first time.
+That repo should become the home of the project immediately.
+
+Do not wait until the charter is approved, the milestone, or the final deadline to share the repo for the first time.
 
 ## GitHub And Colab
 
-This repo is the home of the project.
+The course will provide a GitHub starter repo for the project.
 
-If GitHub is new to you, start with [GITHUB_PRIMER.md](./GITHUB_PRIMER.md). If moving from notebooks to a small Python project is new, also read [PYTHON_PROJECT_PRIMER.md](./PYTHON_PROJECT_PRIMER.md). The course template repo is public, but your team should normally create a **private** repo from it and add teammates as collaborators. If you prefer working in Colab for exploration, that is fine. Use Colab when it helps, then move the important work back here. The final project should not live in one person's browser tab. GitHub is the shared source of truth. Colab is just one place to run code.
+That repo is the home of your project. If GitHub is new to you, start with the [GitHub primer](./GITHUB_PRIMER.md). If moving from notebooks to a small Python project is new, also read the [Python project primer](./PYTHON_PROJECT_PRIMER.md). If you prefer using Colab for exploration, that is fine. Use Colab when it helps, then move the important code and notebooks back to GitHub. The final project should not live in one person's browser tab. GitHub is the shared source of truth. Colab is just one place to run code.
 
 ## What You Are Actually Building
 
@@ -83,7 +86,7 @@ Examples:
 
 ### Step 1: Lock the charter
 
-Before you build, you submit a charter using the [template](./CHARTER.md).
+Before you build, create your team repo from the template and start the charter in [CHARTER.md](./CHARTER.md).
 
 Think of the charter as your short project plan. It tells us:
 
@@ -95,7 +98,7 @@ Think of the charter as your short project plan. It tells us:
 - what data you will use
 - what you are not claiming
 
-The charter is reviewed quickly and comes back as `approved` or `needs_revision`. You can revise and resubmit before the deadline. Once it is approved, that becomes the plan we will use to grade both the milestone and the final submission.
+The charter is reviewed in that repo and comes back as `approved` or `needs_revision`. You can revise and update it there before the deadline. Once it is approved, that becomes the plan we will use to grade both the milestone and the final submission.
 
 ### Step 2: Submit the milestone
 

@@ -10,14 +10,16 @@ This public repo is the starter. Your actual team repo should usually be private
 
 1. Click `Use this template` on GitHub to create your team's own **private** repo.
 2. Rename the repo to something clear and short.
-3. If GitHub is new, read [GITHUB_PRIMER.md](./GITHUB_PRIMER.md).
-4. If moving from notebooks to scripts is new, read [PYTHON_PROJECT_PRIMER.md](./PYTHON_PROJECT_PRIMER.md).
-5. Read [FINAL_PROJECT.md](./FINAL_PROJECT.md).
-6. Read [SUBMISSION_FLOW.md](./SUBMISSION_FLOW.md).
-7. Fill [CHARTER.md](./CHARTER.md) and get it approved.
-8. Replace the placeholder fields in `main.py`, `report.md`, and `AI_USAGE_LOG.md`.
-9. Run `uv sync && uv run main.py`.
-10. Commit early. Commit often. Keep the repo readable.
+3. Add teammates as collaborators.
+4. Add the instructor as collaborator if the repo is private.
+5. If GitHub is new, read [GITHUB_PRIMER.md](./GITHUB_PRIMER.md).
+6. If moving from notebooks to scripts is new, read [PYTHON_PROJECT_PRIMER.md](./PYTHON_PROJECT_PRIMER.md).
+7. Read [FINAL_PROJECT.md](./FINAL_PROJECT.md).
+8. Read [SUBMISSION_FLOW.md](./SUBMISSION_FLOW.md).
+9. Start filling [CHARTER.md](./CHARTER.md) in this repo.
+10. Replace the placeholder fields in `main.py`, `report.md`, and `AI_USAGE_LOG.md`.
+11. Run `uv sync && uv run main.py`.
+12. Commit early. Commit often. Keep the repo readable.
 
 ## Why GitHub For The Project
 
