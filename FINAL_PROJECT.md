@@ -25,6 +25,16 @@ Start here. Then use the [charter template](./CHARTER.md). For exact milestone a
 - Final project due: **Friday, May 15, 2026, 11:59 PM IST**
 - Your charter should be approved before the milestone. If you wait until the milestone week to start the charter, you are taking an unnecessary risk.
 
+## One Important Workflow Rule
+
+As soon as your charter is approved:
+
+- update the charter in your GitHub repo
+- make sure the repo link is stable
+- if the repo is private, add the instructor GitHub account `chitagni` as a collaborator
+
+Do not wait until the final deadline to share the repo for the first time.
+
 ## GitHub And Colab
 
 This repo is the home of the project.
@@ -42,6 +52,8 @@ Good projects are narrow. They have:
 - one main number you are trying to estimate, predict, or compare
 - a simple baseline to compare against
 - a result that someone else can reproduce from your repo
+
+If you want to see what a strong charter looks like, read the [sample charters](./examples/README.md).
 
 Examples:
 

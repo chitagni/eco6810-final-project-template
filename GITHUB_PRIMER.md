@@ -40,7 +40,7 @@ When you open the starter repo, go in this order:
 2. `FINAL_PROJECT.md`
 3. `CHARTER.md`
 4. `SUBMISSION_FLOW.md`
-5. `examples/`
+5. `examples/README.md`
 6. `PYTHON_PROJECT_PRIMER.md`
 7. `main.py`
 

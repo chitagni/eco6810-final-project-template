@@ -29,10 +29,22 @@ If you make a meaningful change after the deadline, it does not count unless the
 Make sure all of this is already true:
 
 - your team repo exists on GitHub
-- if the repo is private, the instructor GitHub account `chitagni` has been added as a collaborator
 - the repo has a short `README.md` with the run command
 - the important project files are pushed to GitHub
 - the repo is not depending on one teammate's unsaved local state
+
+## Share The Repo Early
+
+Do this as soon as your charter is approved:
+
+- update `CHARTER.md` in the repo so it matches the approved charter
+- if your team is using a PDF copy of the approved charter, keep that in the repo too
+- if the repo is private, add the instructor GitHub account `chitagni` as a collaborator
+- make sure the repo link you plan to submit later is already the real working repo
+
+This is important.
+
+The repo should not first appear at the milestone or final deadline. It should already be the home of the project by then.
 
 ## Milestone Submission
 

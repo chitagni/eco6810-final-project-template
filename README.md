@@ -46,7 +46,7 @@ The goal is not to turn you into software engineers overnight. The goal is to ma
 - an AI usage log template in [AI_USAGE_LOG.md](./AI_USAGE_LOG.md)
 - a `notebooks/` folder for Colab-first exploration
 - probe and output folders in the right shape
-- three worked charter examples in [`examples/`](./examples/)
+- sample charters in [`examples/README.md`](./examples/README.md)
 
 ## The Working Rule
 
