@@ -40,7 +40,8 @@ When you open the starter repo, go in this order:
 2. `FINAL_PROJECT.md`
 3. `CHARTER.md`
 4. `examples/`
-5. `main.py`
+5. `PYTHON_PROJECT_PRIMER.md`
+6. `main.py`
 
 That order matters. Do not start by poking random files.
 
@@ -157,8 +158,10 @@ Use this pattern:
 
 - explore in Colab
 - save the notebook into the repo under `notebooks/`
-- move stable logic into `main.py` or helper scripts later
+- move stable logic into `project_code/` or helper scripts later
 - keep final figures, tables, and JSON outputs in the repo
+
+If the notebook needs to import helper Python files, read [PYTHON_PROJECT_PRIMER.md](./PYTHON_PROJECT_PRIMER.md) next.
 
 The mistake is not using Colab.
 

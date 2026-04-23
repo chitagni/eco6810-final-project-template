@@ -11,11 +11,12 @@ This public repo is the starter. Your actual team repo should usually be private
 1. Click `Use this template` on GitHub to create your team's own **private** repo.
 2. Rename the repo to something clear and short.
 3. If GitHub is new, read [GITHUB_PRIMER.md](./GITHUB_PRIMER.md).
-4. Read [FINAL_PROJECT.md](./FINAL_PROJECT.md).
-5. Fill [CHARTER.md](./CHARTER.md) and get it approved.
-6. Replace the placeholder fields in `main.py`, `report.md`, and `AI_USAGE_LOG.md`.
-7. Run `uv sync && uv run main.py`.
-8. Commit early. Commit often. Keep the repo readable.
+4. If moving from notebooks to scripts is new, read [PYTHON_PROJECT_PRIMER.md](./PYTHON_PROJECT_PRIMER.md).
+5. Read [FINAL_PROJECT.md](./FINAL_PROJECT.md).
+6. Fill [CHARTER.md](./CHARTER.md) and get it approved.
+7. Replace the placeholder fields in `main.py`, `report.md`, and `AI_USAGE_LOG.md`.
+8. Run `uv sync && uv run main.py`.
+9. Commit early. Commit often. Keep the repo readable.
 
 ## Why GitHub For The Project
 
@@ -34,9 +35,11 @@ The goal is not to turn you into software engineers overnight. The goal is to ma
 ## What This Repo Already Gives You
 
 - a fast primer in [GITHUB_PRIMER.md](./GITHUB_PRIMER.md)
+- a notebook-to-project guide in [PYTHON_PROJECT_PRIMER.md](./PYTHON_PROJECT_PRIMER.md)
 - the full project brief in [FINAL_PROJECT.md](./FINAL_PROJECT.md)
 - the project plan template in [CHARTER.md](./CHARTER.md)
 - a runnable `main.py` that writes the required JSON outputs
+- a `project_code/` folder for reusable Python functions
 - a report template in [report.md](./report.md)
 - an AI usage log template in [AI_USAGE_LOG.md](./AI_USAGE_LOG.md)
 - a `notebooks/` folder for Colab-first exploration
@@ -54,9 +57,11 @@ If your team remembers only one thing, remember that.
 | Path | What it is for |
 |---|---|
 | `GITHUB_PRIMER.md` | Fast GitHub onboarding for students coming from Colab |
+| `PYTHON_PROJECT_PRIMER.md` | How to combine notebooks, Python files, and `main.py` |
 | `FINAL_PROJECT.md` | Full project requirements and grading |
 | `CHARTER.md` | The short project plan you submit first |
 | `main.py` | Your main reproducible run |
+| `project_code/` | Reusable helper functions imported by notebooks or `main.py` |
 | `notebooks/` | Colab notebooks and exploratory work |
 | `data/` | Data files or licence notes |
 | `artifacts/probes/` | Small proofs that your data sources work |
@@ -92,7 +97,7 @@ Good pattern:
 
 - explore in Colab if that is faster
 - save the notebook in `notebooks/`
-- move stable logic into `main.py` or helper scripts
+- move stable logic into `project_code/` or helper scripts
 - keep the final reproducible run inside the repo
 
 Bad pattern:

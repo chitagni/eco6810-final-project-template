@@ -29,7 +29,7 @@ Start here. Then use the [charter template](./CHARTER.md).
 
 This repo is the home of the project.
 
-If GitHub is new to you, start with [GITHUB_PRIMER.md](./GITHUB_PRIMER.md). The course template repo is public, but your team should normally create a **private** repo from it and add teammates as collaborators. If you prefer working in Colab for exploration, that is fine. Use Colab when it helps, then move the important work back here. The final project should not live in one person's browser tab. GitHub is the shared source of truth. Colab is just one place to run code.
+If GitHub is new to you, start with [GITHUB_PRIMER.md](./GITHUB_PRIMER.md). If moving from notebooks to a small Python project is new, also read [PYTHON_PROJECT_PRIMER.md](./PYTHON_PROJECT_PRIMER.md). The course template repo is public, but your team should normally create a **private** repo from it and add teammates as collaborators. If you prefer working in Colab for exploration, that is fine. Use Colab when it helps, then move the important work back here. The final project should not live in one person's browser tab. GitHub is the shared source of truth. Colab is just one place to run code.
 
 ## What You Are Actually Building
 
