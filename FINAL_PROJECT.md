@@ -7,7 +7,7 @@ One project. Two checkpoints. Fifty percent of the course.
 
 This is not a presentation contest, and it is not a "pick a cool topic and see what happens" assignment. Your team is building one clear economics project that someone else should be able to understand and run.
 
-Start here. Then use the [charter template](./CHARTER.md).
+Start here. Then use the [charter template](./CHARTER.md). For exact milestone and final submission steps, read the [submission flow](./SUBMISSION_FLOW.md).
 
 ## At a Glance
 

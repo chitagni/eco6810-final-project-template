@@ -39,9 +39,10 @@ When you open the starter repo, go in this order:
 1. `README.md`
 2. `FINAL_PROJECT.md`
 3. `CHARTER.md`
-4. `examples/`
-5. `PYTHON_PROJECT_PRIMER.md`
-6. `main.py`
+4. `SUBMISSION_FLOW.md`
+5. `examples/`
+6. `PYTHON_PROJECT_PRIMER.md`
+7. `main.py`
 
 That order matters. Do not start by poking random files.
 
