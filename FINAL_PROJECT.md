@@ -19,6 +19,12 @@ Start here. Then use the [charter template](./CHARTER.md).
 | Core standard | One primary metric, one baseline, one reproducible run |
 | Final expectation | A repo that runs cleanly and writes the required outputs |
 
+## Spring 2026 Dates
+
+- Project milestone due: **Tuesday, May 5, 2026, 11:59 PM IST**
+- Final project due: **Friday, May 15, 2026, 11:59 PM IST**
+- Your charter should be approved before the milestone. If you wait until the milestone week to start the charter, you are taking an unnecessary risk.
+
 ## GitHub And Colab
 
 This repo is the home of the project.
@@ -118,6 +124,25 @@ What we check:
 | Technical execution and reproducibility | 8 | The repo runs cleanly, outputs are stable, and the README matches reality |
 | Evidence completeness | 8 | The promised figures, tables, checks, and fallback analyses are actually there |
 | Interpretation and limitations | 6 | You answer the stakeholder question honestly and state the limits without overclaiming |
+
+## How Grading Works In Practice
+
+This project is not graded by vague topic taste. It is graded against a locked contract.
+
+Most of the evaluation is designed to be automated and artifact-based:
+
+- charter measurability review
+- required-file and schema checks
+- reproducibility checks
+- report-versus-charter consistency checks
+- claim-audit for overreach
+
+Human review is reserved for edge cases:
+
+- privacy or ethics concerns
+- unsupported advanced methods
+- repeated unresolved ambiguity
+- serious mismatch between the submitted artifacts and the written claims
 
 ## Important Grading Principle
 

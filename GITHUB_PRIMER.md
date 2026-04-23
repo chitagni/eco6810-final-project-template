@@ -2,7 +2,7 @@
 
 This is not a full GitHub course.
 
-You have about 18-19 days to finish the project. So the GitHub ramp-up should take one day, not one week. The goal is simple: get your team onto one shared project home fast, then get back to the economics.
+You have about three weeks to finish the project. So the GitHub ramp-up should take one day, not one week. The goal is simple: get your team onto one shared project home fast, then get back to the economics.
 
 ## The Shortest Honest Explanation
 
