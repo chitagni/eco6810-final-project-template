@@ -75,7 +75,7 @@ If you cannot write a number, you do not yet have a project — you have a topic
 
 ## 4. Baseline to beat
 
-The naïve or prior number your threshold is measured against. Examples:
+The naive or prior number your threshold is measured against. Examples:
 
 - A previous study's coefficient or error.
 - A simple AR(1) or last-value forecast.

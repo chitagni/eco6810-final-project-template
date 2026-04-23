@@ -1,6 +1,8 @@
 # Example Charter — Female Literacy and Infant Mortality Across NFHS Rounds
 
 > **Worked example for the descriptive project type.** Adapted from a real proposal by **Aalokita Roy Chowdhury and Triparna Dasgupta**, refined into charter form and shared with the class as an exemplar. A descriptive project quantifies patterns *without* making causal claims; its success is measured by the structure, sample discipline, and honesty of its comparisons, not by a coefficient sign.
+>
+> **Repo-first note.** In a real team project, this content would live in `CHARTER.md` inside the team repo, be revised there until approval, and could then be frozen as `charter_approved.pdf` if the team wants a locked copy.
 
 ---
 
@@ -20,7 +22,7 @@
 
 District-level IMR remains a NITI Aayog Aspirational Districts indicator. NITI's annual district-ranking exercise uses cross-sectional correlates to prioritise interventions, and female-literacy programmes are repeatedly invoked but rarely stratified by baseline IMR level or cross-round comparison. A NITI analyst preparing the FY 2026-27 Aspirational Districts report needs a clear descriptive picture of how the female-literacy / IMR association varies across district baselines, how it has evolved between NFHS-4 and NFHS-5, and how much of the pairwise association persists after adjustment for household wealth, healthcare access, sanitation, and urbanisation.
 
-## 2. Primary outcome variable
+## 2. Main outcome variable
 
 - **Name:** district-level Infant Mortality Rate
 - **Unit:** deaths per 1000 live births (0–200 range)
@@ -29,7 +31,7 @@ District-level IMR remains a NITI Aayog Aspirational Districts indicator. NITI's
   - **NFHS-5:** the IIPS district factsheet for NFHS-5 does **not** publish district-level IMR (only state-level). We therefore use the peer-reviewed modelled estimates from Mendeley Data (doi:10.17632/t3s358sfzg.1, CC-BY 4.0), which back-cast district-level IMR from NFHS-5 state-level IMR plus district covariates. Every NFHS-5 IMR figure in our outputs is labelled "modelled (Mendeley 2022)".
 - **Population / panel:** the ~640-district NFHS-4 panel mapped to its NFHS-5 counterpart via the `DT_CEN_CD` column attached to the compiled NFHS CSV (name-reconciled to PC11 codes); unmatched districts dropped and documented.
 
-## 3. Primary quantitative success threshold
+## 3. Main quantitative success threshold
 
 The project delivers all four of:
 
@@ -74,7 +76,7 @@ All sources are open; no DHS microdata registration is required for our design.
 
 **Gotcha we will handle in-script:** the IIPS NFHS portal at `https://www.nfhsiips.in/nfhsuser/nfhs5.php` has a broken SSL certificate chain as of 2026-Q1. We do not fetch from IIPS directly in `main.py`; we use the GitHub-hosted compiled CSV and the DHS Program mirror for any factsheet cross-check (`requests.get(..., verify=False)` only if we need a raw IIPS PDF, which is out of scope).
 
-## 7. Scope fences
+## 7. Scope limits
 
 - We will **not** make causal claims about literacy → IMR. The regression is an *adjustment*, not an identification strategy. Every table headline explicitly says "associational".
 - We will **not** run panel / fixed-effects estimators across rounds. Each round is analysed separately.
@@ -90,7 +92,7 @@ All sources are open; no DHS microdata registration is required for our design.
 - **Risk:** District crosswalk quality turns out worse than expected and the match rate falls below 88%. **Fallback:** Aggregate to state-level analysis, redo all stratified tables and regressions at that level, and document the drop in spatial resolution.
 - **Risk:** Covariates are missing for > 10% of districts and the adjusted regression sample shrinks. **Fallback:** Report both the unadjusted correlation (full sample) and the adjusted partial coefficient (restricted sample), with the sample-size gap disclosed per table.
 
-## 9. Reproducibility contract
+## 9. Reproducibility checklist
 
 - [x] `uv run main.py` regenerates all heatmaps, tables, correlations, t-tests, and regressions in under 3 minutes.
 - [x] Writes `outputs/primary_metric.json` with `{"metric_name": "match_rate_pct", "value": <float>, "threshold": 88.0, "passed": <bool>, "n_quintiles_per_round": <int>, "min_cell_n": <int>, "nfhs4_adjusted_beta": <float>, "nfhs5_adjusted_beta": <float>}`.

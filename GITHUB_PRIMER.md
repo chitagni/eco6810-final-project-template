@@ -32,7 +32,7 @@ But a final project usually needs more than one notebook:
 
 GitHub is where all of that lives together. Colab can still be one place where code runs. It just should not be the only place the project exists.
 
-## Read The Project Repo In This Order
+## Read This Repo In This Order
 
 When you open the starter repo, go in this order:
 
@@ -48,9 +48,9 @@ That order matters. Do not start by poking random files.
 
 ## The 24-Hour Ramp
 
-By the end of the first 24 hours, each team should have done all of this:
+By the end of the first 24 hours, your team should have done all of this:
 
-- created the repo from the template
+- created a **private** repo from the template
 - renamed it clearly
 - added all team members
 - shared the repo with the instructor
@@ -159,7 +159,7 @@ Do not create a situation where one person becomes "the GitHub person" and every
 
 Here is a clean first-day sequence:
 
-1. One teammate creates the repo from the template.
+1. One teammate creates a private repo from the template.
 2. Add teammates as collaborators.
 3. Add the instructor as collaborator if the repo is private.
 4. Everyone opens the repo and reads `README.md` and `FINAL_PROJECT.md`.

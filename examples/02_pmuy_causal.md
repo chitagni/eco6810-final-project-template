@@ -1,6 +1,8 @@
 # Example Charter — PMUY and Clean-Fuel Adoption
 
 > **Worked example for the causal project type.** Adapted from a real proposal by **Tanisha Aggarwal, Neha Rana, and Jaswathi Lalitha R**, refined into charter form and shared with the class as an exemplar. Notice the falsifiable hypothesis is a signed magnitude on a specific coefficient, not a vague claim about impact.
+>
+> **Repo-first note.** In a real team project, this content would live in `CHARTER.md` inside the team repo, be revised there until approval, and could then be frozen as `charter_approved.pdf` if the team wants a locked copy.
 
 ---
 
@@ -18,16 +20,16 @@
 
 ## 1. Problem and stakeholder
 
-The Pradhan Mantri Ujjwala Yojana (PMUY), launched in May 2016, subsidises LPG connections for women from poor households. In 2025 the Ministry of Petroleum and Natural Gas approved an additional 25 lakh connections under Ujjwala 2.0 and extended refill subsidies. The Ministry's FY 2026-27 budget memorandum requires a quantitative statement on whether the scheme has caused faster clean-fuel adoption in the states most dependent on solid fuel before the rollout. Our charter targets that specific decision point and packages the evidence into a public-facing policy app that a Ministry communications officer could deploy verbatim.
+The Pradhan Mantri Ujjwala Yojana (PMUY), launched in May 2016, subsidises LPG connections for women from poor households. In 2025 the Ministry of Petroleum and Natural Gas approved an additional 25 lakh connections under Ujjwala 2.0 and extended refill subsidies. The Ministry's FY 2026-27 budget memorandum requires a quantitative statement on whether the scheme has caused faster clean-fuel adoption in the states most dependent on solid fuel before the rollout. Our charter targets that specific decision point and packages the evidence into a reproducible policy-facing analysis that a Ministry analyst could actually inspect and reuse.
 
-## 2. Primary outcome variable
+## 2. Main outcome variable
 
 - **Name:** share of households using clean cooking fuel (LPG, electricity, biogas, or natural gas as primary)
 - **Unit:** percentage points, 0–100
 - **Source:** NFHS-4 (2015-16) and NFHS-5 (2019-21) state-level household files; variable `HV226` recoded into a clean-fuel binary, aggregated by state-round using sample weights.
 - **Population / panel:** 28 Indian states (excluding UTs for comparability), two rounds; 56 state-round observations.
 
-## 3. Primary quantitative success threshold
+## 3. Main quantitative success threshold
 
 The Difference-in-Differences coefficient β₃ on `Post × HighExposure` in the two-way fixed-effects model below has:
 (a) a 95% confidence interval that excludes zero, and
@@ -47,7 +49,7 @@ States in the bottom half of pre-policy clean-fuel access (below the NFHS-4 medi
 
 All four sources are open. No DHS microdata registration is required — the state-level clean-fuel share needed for the DiD is served directly by the DHS aggregated API.
 
-- **NFHS-4 and NFHS-5 state-level clean-fuel share (primary outcome):**
+- **NFHS-4 and NFHS-5 state-level clean-fuel share (main outcome):**
   - DHS Program aggregated API — no registration: https://api.dhsprogram.com/rest/dhs/data
   - Parameters: `countryIds=IA` (India), `indicatorIds=HC_CKFL_H_CLN` (clean fuel composite), `surveyIds=IA2020DHS` (NFHS-5) or `IA2015DHS` (NFHS-4), `breakdown=all` (returns ~49 rows: national + urban/rural + wealth quintile + 28 states / 8 UTs).
   - Probe: `requests.get("https://api.dhsprogram.com/rest/dhs/data", params={"countryIds":"IA","indicatorIds":"HC_CKFL_H_CLN","surveyIds":"IA2020DHS","breakdown":"all","f":"json"})` → `.json()["Data"]`.
@@ -67,15 +69,15 @@ All four sources are open. No DHS microdata registration is required — the sta
   - MoHFW compendium (both phases) mirrored at https://dhsprogram.com/pubs/pdf/OF43/NFHS-5_India_and_State_Factsheet_Compendium_Phase-I.pdf and `..._Phase-II.pdf`.
 - *(Access-probe notebook: `notebooks/00_fetch_one_state.ipynb` hits the DHS API for one state in each round.)*
 
-## 7. Scope fences
+## 7. Scope limits
 
-The deliverable is a **six-page Streamlit policy app** (Policy Overview, Eligibility & Scheme, State Performance Dashboard, Impact Analysis, AI Explainer, Current Updates) plus the underlying econometric notebook. Specifically:
+The core deliverable is a reproducible analysis repo plus a short policy-facing write-up. If time permits, the team may also include a small read-only Streamlit explainer. Specifically:
 
 - We will **not** claim causal identification beyond the parallel-trends assumption for the DiD. Event-study plots are diagnostic, not inferential.
 - We will **not** analyse refill intensity or health outcomes (blood-pressure, respiratory) even though they are in the NFHS files. Those appear in the Performance Index as a composite metric only, not as primary outcomes.
-- The **State PMUY Performance Index** (40% clean-fuel improvement, 30% connection coverage, 20% refill usage, 10% rural inclusion) is a presentational ranking, not a causal or inferential estimate. It will be labelled as such in the app.
-- The **AI Explainer** is a templated natural-language narration of the regression output. It explains the model; it does **not** replace the model and does **not** fabricate numbers.
-- We will **not** build a mobile-responsive version or user authentication.
+- The **State PMUY Performance Index** (40% clean-fuel improvement, 30% connection coverage, 20% refill usage, 10% rural inclusion) is a presentational ranking, not a causal or inferential estimate. It will be labelled clearly as descriptive if included.
+- Any short AI-assisted explainer will be templated from the actual regression output. It explains the model; it does **not** replace the model and does **not** fabricate numbers.
+- We will **not** build a production-grade app, mobile-responsive version, or user authentication.
 - We will **not** use UTs or disaggregate to district-level adoption.
 
 ## 8. Risks and fallback
@@ -83,12 +85,12 @@ The deliverable is a **six-page Streamlit policy app** (Policy Overview, Eligibi
 - **Risk:** Parallel-trends assumption cannot be visually supported with only two NFHS rounds (one pre, one post). **Fallback:** Supplement with IHDS-II (2011-12) as a pseudo-pre-period to anchor the pre-trend; report both DiD-only and DiD-with-IHDS-anchor estimates side by side.
 - **Risk:** The high-vs-low exposure split produces only 14 states in each group; SEs may be too wide to reject null. **Fallback:** Pre-commit an alternative continuous-treatment specification (`β · (1 − baseline_clean_share) × Post`) and report both.
 
-## 9. Reproducibility contract
+## 9. Reproducibility checklist
 
-- [x] `uv run main.py` runs top-to-bottom in under 8 minutes (all regressions, all plots, all app data files).
+- [x] `uv run main.py` runs top-to-bottom in under 8 minutes (all regressions, plots, and final output files).
 - [x] Writes `outputs/primary_metric.json` with `{"metric_name": "did_coefficient_pp", "value": <float>, "ci_lower": <float>, "ci_upper": <float>, "threshold": 3.0, "passed": <bool>}`.
 - [x] Writes `outputs/baseline_metric.json` with the unadjusted national pre-post difference.
-- [x] `README.md` documents the environment, exact commands, and app launch (`uv run streamlit run app.py`).
+- [x] `README.md` documents the environment and exact commands.
 - [x] NFHS extract SQL or `rdhs` query is committed; the aggregated state-round panel is written to `data/panel.parquet`.
 
 ---
