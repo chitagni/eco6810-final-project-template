@@ -29,13 +29,13 @@ GitHub helps because:
 - reproducibility gets much easier
 - handing the project to the instructor is just sharing the repo
 
-The goal is not to turn you into software engineers overnight. The goal is to stop project coordination from becoming chaos.
+The goal is not to turn you into software engineers overnight. The goal is to make team coordination simple and keep the project organized.
 
 ## What This Repo Already Gives You
 
 - a fast primer in [GITHUB_PRIMER.md](./GITHUB_PRIMER.md)
 - the full project brief in [FINAL_PROJECT.md](./FINAL_PROJECT.md)
-- the contract template in [CHARTER.md](./CHARTER.md)
+- the project plan template in [CHARTER.md](./CHARTER.md)
 - a runnable `main.py` that writes the required JSON outputs
 - a report template in [report.md](./report.md)
 - an AI usage log template in [AI_USAGE_LOG.md](./AI_USAGE_LOG.md)
@@ -45,7 +45,7 @@ The goal is not to turn you into software engineers overnight. The goal is to st
 
 ## The Working Rule
 
-One repo. One primary metric. One baseline. One documented run command.
+One repo. One main metric. One baseline. One documented run command.
 
 If your team remembers only one thing, remember that.
 
@@ -55,11 +55,11 @@ If your team remembers only one thing, remember that.
 |---|---|
 | `GITHUB_PRIMER.md` | Fast GitHub onboarding for students coming from Colab |
 | `FINAL_PROJECT.md` | Full project requirements and grading |
-| `CHARTER.md` | The contract you submit first |
+| `CHARTER.md` | The short project plan you submit first |
 | `main.py` | Your main reproducible run |
 | `notebooks/` | Colab notebooks and exploratory work |
 | `data/` | Data files or licence notes |
-| `artifacts/probes/` | One-row or one-response source probes |
+| `artifacts/probes/` | Small proofs that your data sources work |
 | `outputs/` | Required JSON outputs plus tables and figures |
 | `report.md` | Final written report |
 | `AI_USAGE_LOG.md` | What you used AI for and what you verified yourself |
@@ -102,23 +102,38 @@ Bad pattern:
 - no one knows which version is current
 - the final result depends on hidden notebook state
 
-## Submission Logic
+## What Will Be Graded
 
-You are not submitting a random folder of files. You are submitting evidence that your project works.
+You are not submitting a random folder of files. You are showing that your project works and that your team can explain it clearly.
 
-For the milestone, we care whether the project is real and runnable.
+For the milestone, we mainly ask:
 
-For the final submission, we care whether you executed the approved contract honestly and reproducibly.
+- is the project real?
+- can you access the data?
+- does the repo run?
 
-The exact grading rules are in [FINAL_PROJECT.md](./FINAL_PROJECT.md).
+For the final submission, we mainly ask:
+
+- did you stick to the approved plan?
+- does the repo still run cleanly?
+- does the report match the code and outputs?
+
+The full details are in [FINAL_PROJECT.md](./FINAL_PROJECT.md).
 
 ## Before You Submit
 
+For the milestone:
+
 - the charter is approved
 - the run command in `README.md` is accurate
+- each main data source has a small proof that it works
+- `outputs/baseline_metric.json` is real
+- `outputs/milestone_manifest.json` is real
+
+For the final submission:
+
 - `outputs/baseline_metric.json` is real
 - `outputs/primary_metric.json` is real
-- `outputs/milestone_manifest.json` is real
 - the report matches the code
 - the AI usage log is honest
 

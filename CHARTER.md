@@ -2,15 +2,15 @@
 
 > Need the big picture first? Read the [Final Project brief](./FINAL_PROJECT.md) before you fill this out.
 >
-> **What this is.** A contract between your team and the course. You define success *before* you start building, so grading later is about whether you hit what you said you would hit — not whether a human liked the topic. Once the charter is approved, the numbers below become the grading spec.
+> **What this is.** Your short approved project plan. It tells me what you are trying to do, what data you will use, what your main metric is, and what a good result would look like.
 >
-> **What this is not.** A project plan, a slide deck, or a brainstorm. It is a short, precise, falsifiable commitment.
+> **What this is not.** A brainstorm or a long proposal. Keep it short, specific, and concrete.
 >
-> **Where it fits.** This is the approval gate for the single 50-point final project. The milestone (20%) and final submission (30%) are both judged against this locked contract.
+> **Why we use it.** It keeps the project focused. Once this is approved, the milestone and the final submission are judged against this plan, not against shifting expectations later.
 >
-> **How to fill it.** Copy this file. Answer every field. Keep it under two pages. If a field says "numeric", write an actual number with a unit — not an adjective. The AI charter reviewer will reject vague answers and point at the exact field to fix.
+> **How to fill it.** Copy this file. Answer every field. Keep it under two pages. If a field asks for a number, give a real number with a unit.
 >
-> **Submission.** Submit as PDF to Classroom. The reviewer runs automatically and returns a verdict in under five minutes. You may iterate as many times as you want before the deadline; once approved, the charter is locked.
+> **Submission.** Submit it as a PDF to Classroom. You can revise and resubmit until it is approved.
 
 ---
 
@@ -24,7 +24,7 @@
 | Charter version | v1 |
 | Date | _(YYYY-MM-DD)_ |
 
-**Project type notes.** Predictive = you are trying to forecast or predict a quantity. Causal = you are trying to estimate the effect of a policy/intervention. Descriptive = you are quantifying patterns or disparities without causal claims. The success threshold looks different for each; pick the one that fits your primary question.
+**Project type notes.** Predictive = you are trying to forecast or predict a quantity. Causal = you are trying to estimate the effect of a policy or intervention. Descriptive = you are measuring patterns or disparities without making a causal claim. The success threshold looks different for each type, so pick the one that fits your main question.
 
 ---
 
@@ -36,7 +36,7 @@ One paragraph. Who is the specific person, institution, or policy body that woul
 
 ---
 
-## 2. Primary outcome variable
+## 2. Main outcome variable
 
 The single number your project centres on. State:
 
@@ -45,13 +45,13 @@ The single number your project centres on. State:
 - **Source table/column/field**
 - **Population / panel** (which rows: which years, which geographies, which people)
 
-Only one primary. Secondary outcomes go under "Scope fences" as things you *may* report but will not be graded on.
+Only one main outcome. Secondary outcomes go under "Scope limits" as things you *may* report but will not be graded on.
 
 *Write here:*
 
 ---
 
-## 3. Primary quantitative success threshold
+## 3. Main quantitative success threshold
 
 A single numeric bar. Your project is a success if the delivered metric crosses this bar, and a failure if it does not. Pick one form:
 
@@ -102,7 +102,7 @@ If any source requires manual scraping, permissions, or a login you do not yet h
 
 ---
 
-## 7. Scope fences
+## 7. Scope limits
 
 Bullet list of things you are **not** claiming and **not** responsible for. Examples:
 
@@ -110,7 +110,7 @@ Bullet list of things you are **not** claiming and **not** responsible for. Exam
 - "We will not harmonise district boundaries across NFHS rounds; analysis is at state level."
 - "We will not ship a mobile version of the app."
 
-Scope fences protect you at grading time. If a graded criterion asks about something you fenced out, the AI will not hold it against you.
+This section protects you at grading time. If you clearly say "we are not doing X," you will not be graded on X.
 
 *Write here:*
 
@@ -129,9 +129,9 @@ One risk is enough. Two is fine. Zero means you have not thought hard enough.
 
 ---
 
-## 9. Reproducibility contract
+## 9. Reproducibility checklist
 
-Your final repo must satisfy all of these mechanically — no human judgement needed:
+Your final repo must satisfy all of these:
 
 - [ ] `uv run main.py` runs end-to-end in under 10 minutes on a clean machine with no manual intervention.
 - [ ] It writes `outputs/primary_metric.json` containing a single JSON object with at least `{"metric_name": "...", "value": <number>, "threshold": <number>, "passed": <bool>}`.
@@ -139,12 +139,12 @@ Your final repo must satisfy all of these mechanically — no human judgement ne
 - [ ] A `README.md` documents the commands and expected outputs in ≤ 20 lines.
 - [ ] All data sources are either fetched in-script or committed under `data/` with a licence note.
 
-If you cannot commit to this, your project is not yet scoped for automated grading. Talk to the instructor before proceeding.
+If you cannot commit to this, your project is probably still too broad. Talk to the instructor before proceeding.
 
 ---
 
 ## Sign-off
 
-By submitting this charter, the team commits to being graded against Sections 3, 4, 5, and 9 as numeric targets, and against Sections 1, 2, 6, 7, 8 for framing and honesty. The milestone and final-project graders both use this contract. The instructor reserves the right to adjust a grade upward for exceptional work, but will not adjust downward for topic difficulty once the charter is approved.
+By submitting this charter, the team agrees that this is the plan the project will be graded against. The instructor will not penalize you just because the topic turns out to be difficult, as long as the project stays honest and within the approved scope.
 
 *Signed:* _(team member names)_

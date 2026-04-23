@@ -9,13 +9,13 @@ What question did you ask, who cares about the answer, and what decision does it
 ## 2. Charter Summary
 
 - Project type:
-- Primary metric:
+- Main metric:
 - Success threshold:
 - Baseline:
 
 ## 3. Data
 
-List the primary sources you used. Say how you accessed them. If a source changed or failed, say what you did instead.
+List the main sources you used. Say how you accessed them. If a source changed or failed, say what you did instead.
 
 ## 4. Method
 
@@ -23,7 +23,7 @@ Explain the baseline first. Then explain the main analysis. Keep it readable. If
 
 ## 5. Result
 
-- Primary metric value:
+- Main metric value:
 - Threshold:
 - Passed:
 

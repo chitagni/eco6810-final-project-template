@@ -5,7 +5,7 @@ One project. Two checkpoints. Fifty percent of the course.
 - Project milestone: 20%
 - Final submission: 30%
 
-This is not a presentation contest, and it is not a "pick a cool topic and see what happens" assignment. You are building a real, measurable, reproducible economics project. We will grade whether you scoped it well, got the data, built the pipeline, and answered the question honestly.
+This is not a presentation contest, and it is not a "pick a cool topic and see what happens" assignment. Your team is building one clear economics project that someone else should be able to understand and run.
 
 Start here. Then use the [charter template](./CHARTER.md).
 
@@ -16,8 +16,8 @@ Start here. Then use the [charter template](./CHARTER.md).
 | Team size | 2-3 students |
 | Project types | Predictive, causal, or descriptive |
 | First gate | Approved charter |
-| Core standard | One primary metric, one baseline, one reproducible run |
-| Final expectation | A repo that runs cleanly and writes the required outputs |
+| Core standard | One main question, one main metric, one simple baseline, one reproducible run |
+| Final expectation | A GitHub repo that runs cleanly and contains the required files |
 
 ## Spring 2026 Dates
 
@@ -29,13 +29,19 @@ Start here. Then use the [charter template](./CHARTER.md).
 
 This repo is the home of the project.
 
-If GitHub is new to you, start with [GITHUB_PRIMER.md](./GITHUB_PRIMER.md). The course template repo is public, but your team should normally create a **private** repo from it and add teammates as collaborators. If you prefer working in Colab for exploration, that is fine. Use Colab when it helps, then push the work back here. The final project should not live in one person's browser tab. GitHub is the shared source of truth. Colab is just one execution surface.
+If GitHub is new to you, start with [GITHUB_PRIMER.md](./GITHUB_PRIMER.md). The course template repo is public, but your team should normally create a **private** repo from it and add teammates as collaborators. If you prefer working in Colab for exploration, that is fine. Use Colab when it helps, then move the important work back here. The final project should not live in one person's browser tab. GitHub is the shared source of truth. Colab is just one place to run code.
 
 ## What You Are Actually Building
 
 Your team will pick one economic question and answer it with data.
 
-Good projects are narrow. They have a clear stakeholder, a dataset you can actually access, and one primary number that tells us whether the project worked.
+Good projects are narrow. They have:
+
+- a clear question
+- data you can actually access
+- one main number you are trying to estimate, predict, or compare
+- a simple baseline to compare against
+- a result that someone else can reproduce from your repo
 
 Examples:
 
@@ -46,7 +52,7 @@ Examples:
 ## What A Good Project Looks Like
 
 - The question matters to a real person, institution, or policy choice.
-- The primary outcome is concrete and measurable.
+- The main outcome is concrete and measurable.
 - You can name the exact source of the data now, not later.
 - You can compute a simple baseline before you build anything fancy.
 - The scope fits one semester and a 2-3 person team.
@@ -67,40 +73,40 @@ Examples:
 
 Before you build, you submit a charter using the [template](./CHARTER.md).
 
-The charter does one job: it locks the contract. It tells us:
+Think of the charter as your short project plan. It tells us:
 
 - what question you are answering
 - who cares about the answer
-- what your primary metric is
+- what your main metric is
 - what baseline you will compare against
 - what success would look like numerically
 - what data you will use
 - what you are not claiming
 
-The charter is reviewed quickly and comes back as `approved` or `needs_revision`. You can revise and resubmit before the deadline. Once it is approved, that becomes the grading contract for both the milestone and the final submission.
+The charter is reviewed quickly and comes back as `approved` or `needs_revision`. You can revise and resubmit before the deadline. Once it is approved, that becomes the plan we will use to grade both the milestone and the final submission.
 
 ### Step 2: Submit the milestone
 
-The milestone is worth 20 points. At this stage, you are proving that the project is real and runnable.
+The milestone is worth 20 points. At this stage, you are proving that the project is real and underway.
 
 You must submit:
 
 - your approved charter
 - a repo link or repo snapshot
-- one-row or one-response data probes for every primary source
+- a tiny proof that you can access each main data source
 - `outputs/baseline_metric.json`
 - `outputs/milestone_manifest.json`
 - a short `README.md` with the exact milestone run command
 
-What we check:
+What we are asking at the milestone:
 
-| Criterion | Points | What earns the points |
+| What we check | Points | In plain English |
 |---|---:|---|
-| Charter lock | 4 | Your milestone still matches the approved project type, primary metric, and baseline logic |
-| Source access proof | 4 | Every declared source has a working probe or an explicitly approved fallback |
-| Baseline before sophistication | 4 | You computed the simple baseline first and saved it in the required format |
-| Reproducible dry run | 4 | The run command works and writes the milestone artifacts |
-| Metric-schema readiness | 4 | You can already produce the final metric structure, even if the value is still preliminary |
+| Did you stay with the approved plan? | 4 | The question, project type, main metric, and baseline still match the approved charter |
+| Can you get the data? | 4 | For each main source, show a small proof that it works, or ask early to replace it with a different source |
+| Did you build the simple version first? | 4 | You computed a baseline and saved it in `outputs/baseline_metric.json` |
+| Does the repo run? | 4 | The command in your `README.md` runs and writes the milestone files |
+| Are the final outputs taking shape? | 4 | `outputs/milestone_manifest.json` shows that your final metric file is already taking the right shape |
 
 ### Step 3: Submit the final project
 
@@ -116,33 +122,31 @@ You must submit:
 - the tables and figures promised in the charter
 - a short AI usage log
 
-What we check:
+What we are asking at the final submission:
 
-| Criterion | Points | What earns the points |
+| What we check | Points | In plain English |
 |---|---:|---|
-| Contract fidelity | 8 | You did not silently swap the question, metric, baseline, or project type |
-| Technical execution and reproducibility | 8 | The repo runs cleanly, outputs are stable, and the README matches reality |
-| Evidence completeness | 8 | The promised figures, tables, checks, and fallback analyses are actually there |
-| Interpretation and limitations | 6 | You answer the stakeholder question honestly and state the limits without overclaiming |
+| Did you stick to the approved project? | 8 | You did not quietly change the question, main metric, baseline, or project type |
+| Does the repo run cleanly? | 8 | The repo runs, the outputs are stable, and the `README.md` matches what is really needed |
+| Is the evidence actually there? | 8 | The promised figures, tables, checks, and output files are present and easy to inspect |
+| Does the write-up stay honest? | 6 | Your report says what the results actually show, and it clearly states the limits |
 
 ## How Grading Works In Practice
 
-This project is not graded by vague topic taste. It is graded against a locked contract.
+This project is not graded by whether the topic sounds fancy. It is graded against the approved plan in your charter.
 
-Most of the evaluation is designed to be automated and artifact-based:
+In practice, we mainly check three things:
 
-- charter measurability review
-- required-file and schema checks
-- reproducibility checks
-- report-versus-charter consistency checks
-- claim-audit for overreach
+- did you follow the approved plan
+- does the repo run and produce the required files
+- does the report match what the code actually produced
 
-Human review is reserved for edge cases:
+Some of these checks can be automated. I will step in when human judgment is needed, especially for:
 
 - privacy or ethics concerns
 - unsupported advanced methods
 - repeated unresolved ambiguity
-- serious mismatch between the submitted artifacts and the written claims
+- serious mismatch between the submitted files and the written claims
 
 ## Important Grading Principle
 
@@ -150,7 +154,7 @@ You are not being graded on whether the world gives you a pretty result.
 
 A null result can still earn a strong grade. A messy overclaim cannot.
 
-If your project is well-scoped, reproducible, and honest, you can do well even if the effect is small, the forecast is hard, or the hypothesis fails. But if you never produce a valid primary metric, that is a serious problem, because the whole point of the project is to define and deliver one.
+If your project is well-scoped, reproducible, and honest, you can still do well even if the effect is small, the forecast is hard, or the hypothesis fails. But if you never produce a valid main metric, that is a serious problem, because the whole point of the project is to define and deliver one.
 
 ## Required Repo Shape
 
@@ -181,6 +185,8 @@ If your project needs a different run command, clear it with the instructor earl
 
 ### `outputs/baseline_metric.json`
 
+This is your simple benchmark result. It answers: what is the basic thing we compare against?
+
 Minimum shape:
 
 ```json
@@ -192,6 +198,8 @@ Minimum shape:
 ```
 
 ### `outputs/primary_metric.json`
+
+This is your main project result. It answers: what is the final number this project is about?
 
 Minimum shape:
 
@@ -205,6 +213,8 @@ Minimum shape:
 ```
 
 ### `outputs/milestone_manifest.json`
+
+This is a short status file for the milestone. It shows that the project is set up properly and moving in the right direction.
 
 Minimum shape:
 
@@ -226,24 +236,43 @@ Minimum shape:
 
 You can add more fields if they help, but these fields must exist.
 
+## What "Data Probe" And "Fallback" Mean
+
+Students often get stuck on this, so here is the simple version:
+
+- A `data probe` is a tiny proof that you can access a source.
+- Examples: one row from a CSV, one successful API call, one screenshot of a cleaned sample, one exported response from a form or portal.
+- A `fallback` is your backup source or backup plan if the original source stops working.
+- If a source breaks, do not hide it. Tell me early and get the fallback approved.
+
 ## Rules Of The Game
 
 - Better a small clean project than a sprawling broken one.
-- If you want to change the primary metric, baseline, or project type after charter approval, ask first.
+- If you want to change the main metric, baseline, or project type after charter approval, ask first.
 - You may use AI. Log where you used it and what you checked yourself.
 - Every team member should understand the core pipeline and be able to explain it.
 - Honesty helps you. Bluffing does not.
 
 ## Submission Checklist
 
-Before you submit the milestone or the final project, make sure all of this is true:
+### Milestone Checklist: due Tuesday, May 5, 2026, 11:59 PM IST
 
 - the charter is approved
-- the repo runs from the documented command
-- the required JSON files are present
+- the GitHub repo link is ready
+- each main data source has a small proof that it works
+- `outputs/baseline_metric.json` is real, not placeholder text
+- `outputs/milestone_manifest.json` is real, not placeholder text
+- the run command in `README.md` works
+
+### Final Checklist: due Friday, May 15, 2026, 11:59 PM IST
+
+- the final GitHub repo link is ready
+- `outputs/baseline_metric.json` is real
+- `outputs/primary_metric.json` is real
 - the report matches what the code actually produced
-- the claimed limitations are real
-- the filenames are clean and the folder is easy to inspect
+- the promised tables and figures are present
+- the AI usage log is honest and complete
+- the repo is clean enough that someone else can inspect it without guessing
 
 ## How To Pick A Project Quickly
 
