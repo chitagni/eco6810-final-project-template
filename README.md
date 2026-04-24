@@ -48,7 +48,8 @@ The goal is not to turn you into software engineers overnight. The goal is to ma
 - an AI usage log template in [AI_USAGE_LOG.md](./AI_USAGE_LOG.md)
 - a `notebooks/` folder for Colab-first exploration
 - probe and output folders in the right shape
-- sample charters in [`examples/README.md`](./examples/README.md)
+- peer samples in [`peer-samples/README.md`](./peer-samples/README.md)
+- starter ideas in [`starter-ideas/README.md`](./starter-ideas/README.md)
 
 ## The Working Rule
 
@@ -73,7 +74,8 @@ If your team remembers only one thing, remember that.
 | `outputs/` | Required JSON outputs plus tables and figures |
 | `report.md` | Final written report |
 | `AI_USAGE_LOG.md` | What you used AI for and what you verified yourself |
-| `examples/` | Sample approved charters by project type |
+| `peer-samples/` | Strong sample charters based on earlier student project ideas |
+| `starter-ideas/` | Course-proposed project ideas you can adopt and narrow down |
 
 ## Quick Setup
 

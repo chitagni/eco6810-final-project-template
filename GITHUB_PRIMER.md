@@ -40,9 +40,10 @@ When you open the starter repo, go in this order:
 2. `FINAL_PROJECT.md`
 3. `CHARTER.md`
 4. `SUBMISSION_FLOW.md`
-5. `examples/README.md`
-6. `PYTHON_PROJECT_PRIMER.md`
-7. `main.py`
+5. `peer-samples/README.md`
+6. `starter-ideas/README.md`
+7. `PYTHON_PROJECT_PRIMER.md`
+8. `main.py`
 
 That order matters. Do not start by poking random files.
 
@@ -164,7 +165,7 @@ Here is a clean first-day sequence:
 3. Add the instructor as collaborator if the repo is private.
 4. Everyone opens the repo and reads `README.md` and `FINAL_PROJECT.md`.
 5. One person starts drafting the charter in `CHARTER.md`.
-6. Another person looks through the example charters.
+6. Another person looks through the peer samples or starter ideas.
 7. A third person checks whether the likely data source is actually reachable.
 8. Before the day ends, commit the first draft and push it.
 

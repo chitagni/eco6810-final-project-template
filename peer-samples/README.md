@@ -1,6 +1,6 @@
-# Sample Charters
+# Peer Samples
 
-These are sample charters based on earlier student project ideas.
+These are strong sample charters based on project ideas proposed by earlier student groups.
 
 They are here to show you what a good charter looks like in practice:
 
@@ -10,7 +10,7 @@ They are here to show you what a good charter looks like in practice:
 - realistic data plan
 - honest scope limits
 
-Read them as examples, not as templates to copy.
+Read them as peer samples, not as templates to copy.
 
 ## Start Here
 
@@ -40,4 +40,4 @@ As you read them, focus on these questions:
 - do not copy someone else's numbers
 - do not copy someone else's data plan if it does not fit your question
 
-Use these examples to understand the level of clarity expected.
+Use these peer samples to understand the level of clarity expected.

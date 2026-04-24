@@ -56,7 +56,7 @@ Good projects are narrow. They have:
 - a simple baseline to compare against
 - a result that someone else can reproduce from your repo
 
-If you want to see what a strong charter looks like, read the [sample charters](./examples/README.md).
+If you want to see what strong finished charters look like, read the [peer samples](./peer-samples/README.md). If you want a few starter ideas that your team could still choose and narrow down, read the [starter ideas](./starter-ideas/README.md).
 
 Examples:
 
