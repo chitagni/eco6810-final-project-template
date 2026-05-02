@@ -76,7 +76,7 @@ This makes the process simpler for students and for grading:
 
 ### Deadline
 
-**Tuesday, May 5, 2026, 11:59 PM IST**
+**Wednesday, May 6, 2026, 11:59 PM IST**
 
 ### What must be in GitHub before the deadline
 

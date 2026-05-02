@@ -21,7 +21,7 @@ Start here. Then use the [charter template](./CHARTER.md). For exact milestone a
 
 ## Spring 2026 Dates
 
-- Project milestone due: **Tuesday, May 5, 2026, 11:59 PM IST**
+- Project milestone due: **Wednesday, May 6, 2026, 11:59 PM IST**
 - Final project due: **Friday, May 15, 2026, 11:59 PM IST**
 - Your charter should be approved before the milestone. If you wait until the milestone week to start the charter, you are taking an unnecessary risk.
 
@@ -270,7 +270,7 @@ Students often get stuck on this, so here is the simple version:
 
 ## Submission Checklist
 
-### Milestone Checklist: due Tuesday, May 5, 2026, 11:59 PM IST
+### Milestone Checklist: due Wednesday, May 6, 2026, 11:59 PM IST
 
 - the charter is approved
 - the GitHub repo link is ready
