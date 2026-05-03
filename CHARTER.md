@@ -28,7 +28,7 @@
 |---|---|
 | Team members | _(names, 2–3 people)_ |
 | Project type | _(predictive / causal / descriptive — pick one)_ |
-| Estimated hours per person | _(be honest; 40–60 is typical)_ |
+| Estimated hours per person | _(be honest; solo projects should be around 50 hours; team projects around 45–50 hours per person)_ |
 | Charter version | v1 |
 | Date | _(YYYY-MM-DD)_ |
 
