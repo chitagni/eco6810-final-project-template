@@ -141,10 +141,19 @@ What we are asking at the final submission:
 
 | What we check | Points | In plain English |
 |---|---:|---|
-| Did you stick to the approved project? | 8 | You did not quietly change the question, main metric, baseline, or project type |
-| Does the repo run cleanly? | 8 | The repo runs, the outputs are stable, and the `README.md` matches what is really needed |
+| Did you stick to the approved project? | 5 | You did not quietly change the question, main metric, baseline, or project type |
+| Does the repo run cleanly? | 5 | The repo runs, the outputs are stable, and the `README.md` matches what is really needed |
 | Is the evidence actually there? | 8 | The promised figures, tables, checks, and output files are present and easy to inspect |
-| Does the write-up stay honest? | 6 | Your report says what the results actually show, and it clearly states the limits |
+| Does the report make the result useful? | 12 | Your report explains what the result means, who it matters for, and where the evidence stops |
+
+The 12-point report bucket is where your economics reasoning matters most. A strong final report:
+
+- answers the approved question directly, using the main metric and baseline
+- explains the size and direction of the result in plain economics language
+- connects tables and figures to a claim, instead of leaving them as decoration
+- compares against the threshold, baseline, groups, places, or time periods that matter for your project
+- separates descriptive, predictive, and causal claims
+- names the main data limits and says what extra evidence would change your mind
 
 ## How Grading Works In Practice
 
